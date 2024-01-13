@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <title>Homepage - welcome to my website!</title>
   <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+            var a = false;
+            if(a) {
+                console.log("A e adevarat")
+            }
+            else {
+                console.log("A e fals")
+            }
+
+
+
+        </script>
+
 </head>
 <body>
 <div id="main">
@@ -13,6 +26,18 @@
     <h2 class="red">some h2 red text</h2>
 </div>
 
-<div class="red"><h2>Hai Noroc, asta e pe red!</h2></div>
+<div class="red"><h2>Hai Noroc, asta e pe red!</h2>
+    <a id="link" href="http://www.google.com"> Google </a>
+</div>
+
+
+<script>
+            var link = document.getElementById("link");
+            console.log(link);
+            link.addEventListener("click", function (e) {
+                e.preventDefault()
+                console.log("S-a dat click");
+            })
+        </script>
 </body>
 </html>
